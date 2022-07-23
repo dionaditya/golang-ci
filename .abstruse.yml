@@ -1,0 +1,9 @@
+name: Tests
+image: partlab/ubuntu-golang
+
+install:
+  - go mod download
+
+script:
+  - go build .
+  - ./golang-hello
